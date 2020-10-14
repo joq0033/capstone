@@ -1,7 +1,7 @@
 /*globals describe beforeEach Controller it expect Aquarium FishOwner Fish*/
 describe("Question Two", () => {
     describe('adding the four FishOwners', () => {
-        let theAquarium
+        var theAquarium
         beforeEach(() => {
             theAquarium = Controller.setup()
         })
