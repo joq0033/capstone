@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mocha Tests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+
+    <script class="mocha-init">
+      mocha.setup('bdd')
+      mocha.checkLeaks()
+      expect = chai.expect
+      assert = chai.assert
+      should = chai.should()
+    </script>
+    <script src="src/Sanctuary.js"></script>
+    <script src="src/Elephant.js"></script>
+    <script src="src/Controller.js"></script>
+    <script src="src/ElephantOwner.js"></script>
+
+    <script src="spec/mocha_00.js"></script>
+    <script src="spec/mocha_01.js"></script>
+    <script src="spec/mocha_02.js"></script>
+    <script src="spec/mocha_03.js"></script>
+    <script src="spec/mocha_04_05.js"></script>
+    <script src="spec/mocha_06.js"></script>
+    <script src="spec/mocha_07.js"></script>
+
+    <script class="mocha-exec">
+      mocha.run()
+    </script>
+  </body>
+</html>
